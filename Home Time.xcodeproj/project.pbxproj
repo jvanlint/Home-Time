@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		56CDDE1225CFD48C00FE92CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE1125CFD48C00FE92CA /* AppDelegate.swift */; };
 		56CDDE1425CFD48C00FE92CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE1325CFD48C00FE92CA /* SceneDelegate.swift */; };
-		56CDDE1625CFD48C00FE92CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE1525CFD48C00FE92CA /* ViewController.swift */; };
+		56CDDE1625CFD48C00FE92CA /* TramTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE1525CFD48C00FE92CA /* TramTimeTableViewController.swift */; };
 		56CDDE1925CFD48C00FE92CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CDDE1725CFD48C00FE92CA /* Main.storyboard */; };
 		56CDDE1B25CFD49100FE92CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CDDE1A25CFD49100FE92CA /* Assets.xcassets */; };
 		56CDDE2925CFD49100FE92CA /* Home_TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE2825CFD49100FE92CA /* Home_TimeTests.swift */; };
@@ -46,7 +46,7 @@
 		56CDDE0E25CFD48C00FE92CA /* Home Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CDDE1125CFD48C00FE92CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56CDDE1325CFD48C00FE92CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56CDDE1525CFD48C00FE92CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56CDDE1525CFD48C00FE92CA /* TramTimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramTimeTableViewController.swift; sourceTree = "<group>"; };
 		56CDDE1825CFD48C00FE92CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56CDDE1A25CFD49100FE92CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56CDDE1F25CFD49100FE92CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		56CDDE6225CFD53F00FE92CA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				56CDDE1525CFD48C00FE92CA /* ViewController.swift */,
+				56CDDE1525CFD48C00FE92CA /* TramTimeTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CDDE1625CFD48C00FE92CA /* ViewController.swift in Sources */,
+				56CDDE1625CFD48C00FE92CA /* TramTimeTableViewController.swift in Sources */,
 				56CDDE1225CFD48C00FE92CA /* AppDelegate.swift in Sources */,
 				56CDDE5025CFD4B100FE92CA /* UserDefaultsExtensions.swift in Sources */,
 				56CDDE5C25CFD4BE00FE92CA /* TramTrackerAPI.swift in Sources */,
