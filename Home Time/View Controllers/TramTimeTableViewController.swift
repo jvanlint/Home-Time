@@ -11,7 +11,14 @@ class TramTimeTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        // Add icon to navbar title
+        let logo = UIImage(named: "logo.pdf")
+        let imageView = UIImageView(image: logo)
+        imageView.contentMode = .scaleAspectFit // set imageview's content mode
+        self.navigationItem.titleView = imageView
+
+        
     }
 
 
