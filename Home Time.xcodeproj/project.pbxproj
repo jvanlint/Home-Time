@@ -115,10 +115,11 @@
 		56CDDE1025CFD48C00FE92CA /* Home Time */ = {
 			isa = PBXGroup;
 			children = (
+				56CDDE1F25CFD49100FE92CA /* Info.plist */,
 				56CDDE6325CFD55500FE92CA /* App Specific */,
+				56CDDE6025CFD53000FE92CA /* Storyboards */,
 				56CDDE6225CFD53F00FE92CA /* View Controllers */,
 				56CDDE6125CFD53700FE92CA /* Models */,
-				56CDDE6025CFD53000FE92CA /* Storyboards */,
 				56CDDE5625CFD4BE00FE92CA /* Networking */,
 				56CDDE4C25CFD4B100FE92CA /* Extensions */,
 				56CDDE4425CFD4A400FE92CA /* Helpers */,
@@ -202,7 +203,6 @@
 			children = (
 				56CDDE1125CFD48C00FE92CA /* AppDelegate.swift */,
 				56CDDE1325CFD48C00FE92CA /* SceneDelegate.swift */,
-				56CDDE1F25CFD49100FE92CA /* Info.plist */,
 				56CDDE1A25CFD49100FE92CA /* Assets.xcassets */,
 			);
 			path = "App Specific";
@@ -526,7 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deadfrogstudios.Home-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -545,7 +545,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deadfrogstudios.Home-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
