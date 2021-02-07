@@ -12,9 +12,16 @@
 		56CDDE1625CFD48C00FE92CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE1525CFD48C00FE92CA /* ViewController.swift */; };
 		56CDDE1925CFD48C00FE92CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CDDE1725CFD48C00FE92CA /* Main.storyboard */; };
 		56CDDE1B25CFD49100FE92CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CDDE1A25CFD49100FE92CA /* Assets.xcassets */; };
-		56CDDE1E25CFD49100FE92CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CDDE1C25CFD49100FE92CA /* LaunchScreen.storyboard */; };
 		56CDDE2925CFD49100FE92CA /* Home_TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE2825CFD49100FE92CA /* Home_TimeTests.swift */; };
 		56CDDE3425CFD49100FE92CA /* Home_TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE3325CFD49100FE92CA /* Home_TimeUITests.swift */; };
+		56CDDE4725CFD4A400FE92CA /* WireframeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE4525CFD4A400FE92CA /* WireframeButton.swift */; };
+		56CDDE4825CFD4A400FE92CA /* AdjustableCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE4625CFD4A400FE92CA /* AdjustableCornerView.swift */; };
+		56CDDE5025CFD4B100FE92CA /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE4D25CFD4B100FE92CA /* UserDefaultsExtensions.swift */; };
+		56CDDE5125CFD4B100FE92CA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE4E25CFD4B100FE92CA /* StringExtensions.swift */; };
+		56CDDE5225CFD4B100FE92CA /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE4F25CFD4B100FE92CA /* DateExtensions.swift */; };
+		56CDDE5A25CFD4BE00FE92CA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE5725CFD4BE00FE92CA /* APIClient.swift */; };
+		56CDDE5B25CFD4BE00FE92CA /* TramTrackerTokenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE5825CFD4BE00FE92CA /* TramTrackerTokenAPI.swift */; };
+		56CDDE5C25CFD4BE00FE92CA /* TramTrackerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE5925CFD4BE00FE92CA /* TramTrackerAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +48,6 @@
 		56CDDE1525CFD48C00FE92CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		56CDDE1825CFD48C00FE92CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56CDDE1A25CFD49100FE92CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		56CDDE1D25CFD49100FE92CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56CDDE1F25CFD49100FE92CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CDDE2425CFD49100FE92CA /* Home TimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home TimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CDDE2825CFD49100FE92CA /* Home_TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_TimeTests.swift; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		56CDDE2F25CFD49100FE92CA /* Home TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CDDE3325CFD49100FE92CA /* Home_TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_TimeUITests.swift; sourceTree = "<group>"; };
 		56CDDE3525CFD49100FE92CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56CDDE4525CFD4A400FE92CA /* WireframeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeButton.swift; sourceTree = "<group>"; };
+		56CDDE4625CFD4A400FE92CA /* AdjustableCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustableCornerView.swift; sourceTree = "<group>"; };
+		56CDDE4D25CFD4B100FE92CA /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
+		56CDDE4E25CFD4B100FE92CA /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		56CDDE4F25CFD4B100FE92CA /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		56CDDE5725CFD4BE00FE92CA /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		56CDDE5825CFD4BE00FE92CA /* TramTrackerTokenAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramTrackerTokenAPI.swift; sourceTree = "<group>"; };
+		56CDDE5925CFD4BE00FE92CA /* TramTrackerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramTrackerAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +113,13 @@
 		56CDDE1025CFD48C00FE92CA /* Home Time */ = {
 			isa = PBXGroup;
 			children = (
-				56CDDE1125CFD48C00FE92CA /* AppDelegate.swift */,
-				56CDDE1325CFD48C00FE92CA /* SceneDelegate.swift */,
-				56CDDE1525CFD48C00FE92CA /* ViewController.swift */,
-				56CDDE1725CFD48C00FE92CA /* Main.storyboard */,
-				56CDDE1A25CFD49100FE92CA /* Assets.xcassets */,
-				56CDDE1C25CFD49100FE92CA /* LaunchScreen.storyboard */,
-				56CDDE1F25CFD49100FE92CA /* Info.plist */,
+				56CDDE6325CFD55500FE92CA /* App Specific */,
+				56CDDE6225CFD53F00FE92CA /* View Controllers */,
+				56CDDE6125CFD53700FE92CA /* Models */,
+				56CDDE6025CFD53000FE92CA /* Storyboards */,
+				56CDDE5625CFD4BE00FE92CA /* Networking */,
+				56CDDE4C25CFD4B100FE92CA /* Extensions */,
+				56CDDE4425CFD4A400FE92CA /* Helpers */,
 			);
 			path = "Home Time";
 			sourceTree = "<group>";
@@ -126,6 +140,69 @@
 				56CDDE3525CFD49100FE92CA /* Info.plist */,
 			);
 			path = "Home TimeUITests";
+			sourceTree = "<group>";
+		};
+		56CDDE4425CFD4A400FE92CA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				56CDDE4525CFD4A400FE92CA /* WireframeButton.swift */,
+				56CDDE4625CFD4A400FE92CA /* AdjustableCornerView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		56CDDE4C25CFD4B100FE92CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56CDDE4D25CFD4B100FE92CA /* UserDefaultsExtensions.swift */,
+				56CDDE4E25CFD4B100FE92CA /* StringExtensions.swift */,
+				56CDDE4F25CFD4B100FE92CA /* DateExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		56CDDE5625CFD4BE00FE92CA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				56CDDE5725CFD4BE00FE92CA /* APIClient.swift */,
+				56CDDE5825CFD4BE00FE92CA /* TramTrackerTokenAPI.swift */,
+				56CDDE5925CFD4BE00FE92CA /* TramTrackerAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		56CDDE6025CFD53000FE92CA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				56CDDE1725CFD48C00FE92CA /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		56CDDE6125CFD53700FE92CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56CDDE6225CFD53F00FE92CA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				56CDDE1525CFD48C00FE92CA /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		56CDDE6325CFD55500FE92CA /* App Specific */ = {
+			isa = PBXGroup;
+			children = (
+				56CDDE1125CFD48C00FE92CA /* AppDelegate.swift */,
+				56CDDE1325CFD48C00FE92CA /* SceneDelegate.swift */,
+				56CDDE1F25CFD49100FE92CA /* Info.plist */,
+				56CDDE1A25CFD49100FE92CA /* Assets.xcassets */,
+			);
+			path = "App Specific";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +308,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CDDE1E25CFD49100FE92CA /* LaunchScreen.storyboard in Resources */,
 				56CDDE1B25CFD49100FE92CA /* Assets.xcassets in Resources */,
 				56CDDE1925CFD48C00FE92CA /* Main.storyboard in Resources */,
 			);
@@ -260,7 +336,15 @@
 			files = (
 				56CDDE1625CFD48C00FE92CA /* ViewController.swift in Sources */,
 				56CDDE1225CFD48C00FE92CA /* AppDelegate.swift in Sources */,
+				56CDDE5025CFD4B100FE92CA /* UserDefaultsExtensions.swift in Sources */,
+				56CDDE5C25CFD4BE00FE92CA /* TramTrackerAPI.swift in Sources */,
+				56CDDE5125CFD4B100FE92CA /* StringExtensions.swift in Sources */,
+				56CDDE4725CFD4A400FE92CA /* WireframeButton.swift in Sources */,
+				56CDDE5225CFD4B100FE92CA /* DateExtensions.swift in Sources */,
+				56CDDE4825CFD4A400FE92CA /* AdjustableCornerView.swift in Sources */,
 				56CDDE1425CFD48C00FE92CA /* SceneDelegate.swift in Sources */,
+				56CDDE5A25CFD4BE00FE92CA /* APIClient.swift in Sources */,
+				56CDDE5B25CFD4BE00FE92CA /* TramTrackerTokenAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +386,6 @@
 				56CDDE1825CFD48C00FE92CA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		56CDDE1C25CFD49100FE92CA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56CDDE1D25CFD49100FE92CA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
