@@ -22,6 +22,7 @@
 		56CDDE5A25CFD4BE00FE92CA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE5725CFD4BE00FE92CA /* APIClient.swift */; };
 		56CDDE5B25CFD4BE00FE92CA /* TramTrackerTokenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE5825CFD4BE00FE92CA /* TramTrackerTokenAPI.swift */; };
 		56CDDE5C25CFD4BE00FE92CA /* TramTrackerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE5925CFD4BE00FE92CA /* TramTrackerAPI.swift */; };
+		56CDDE6825CFDBF900FE92CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CDDE6725CFDBF900FE92CA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		56CDDE5725CFD4BE00FE92CA /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		56CDDE5825CFD4BE00FE92CA /* TramTrackerTokenAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramTrackerTokenAPI.swift; sourceTree = "<group>"; };
 		56CDDE5925CFD4BE00FE92CA /* TramTrackerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramTrackerAPI.swift; sourceTree = "<group>"; };
+		56CDDE6725CFDBF900FE92CA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				56CDDE1725CFD48C00FE92CA /* Main.storyboard */,
+				56CDDE6725CFDBF900FE92CA /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CDDE6825CFDBF900FE92CA /* LaunchScreen.storyboard in Resources */,
 				56CDDE1B25CFD49100FE92CA /* Assets.xcassets in Resources */,
 				56CDDE1925CFD48C00FE92CA /* Main.storyboard in Resources */,
 			);
