@@ -15,9 +15,8 @@ class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
     private var data: [Date]
     private let tramTrackerAPIClient = TramTrackerAPI()
 
-
     override init() {
-        self.data = [Date(), Date()]
+        self.data = [Date(), Date().addingTimeInterval(600)]
 
         super.init()
         //self.retrieveNorthStopInfo()

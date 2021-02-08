@@ -71,6 +71,7 @@
 		56CDDE7825D0B67300FE92CA /* NorthTramStopDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthTramStopDataSource.swift; sourceTree = "<group>"; };
 		56CDDE7D25D0B69E00FE92CA /* TramStopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopTableViewCell.swift; sourceTree = "<group>"; };
 		56CDDE8225D0CC0A00FE92CA /* SouthTramStopDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SouthTramStopDataSource.swift; sourceTree = "<group>"; };
+		56CDDE8725D0E6E100FE92CA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		56CDDE0525CFD48C00FE92CA = {
 			isa = PBXGroup;
 			children = (
+				56CDDE8725D0E6E100FE92CA /* README.md */,
 				56CDDE1025CFD48C00FE92CA /* Home Time */,
 				56CDDE2725CFD49100FE92CA /* Home TimeTests */,
 				56CDDE3225CFD49100FE92CA /* Home TimeUITests */,
