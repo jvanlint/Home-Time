@@ -10,8 +10,6 @@ import UserNotifications
 
 class NotificationViewController: UIViewController {
 
-    var tramTime: Date?
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
