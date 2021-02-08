@@ -10,7 +10,10 @@ import UIKit
 class TramTimeTableViewController: UIViewController {
 
     @IBOutlet weak var northTableView: UITableView!
+    @IBOutlet weak var southTableView: UITableView!
     let northTableData = NorthTramStopDataSource()
+    let southTableData = SouthTramStopDataSource()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,9 @@ class TramTimeTableViewController: UIViewController {
 
         northTableView.delegate = northTableData
         northTableView.dataSource = northTableData
+
+        southTableView.delegate = southTableData
+        southTableView.dataSource = southTableData
     }
 
 

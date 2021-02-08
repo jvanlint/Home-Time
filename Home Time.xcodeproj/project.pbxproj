@@ -25,6 +25,7 @@
 		56CDDE6825CFDBF900FE92CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CDDE6725CFDBF900FE92CA /* LaunchScreen.storyboard */; };
 		56CDDE7925D0B67300FE92CA /* NorthTramStopDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE7825D0B67300FE92CA /* NorthTramStopDataSource.swift */; };
 		56CDDE7E25D0B69E00FE92CA /* TramStopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE7D25D0B69E00FE92CA /* TramStopTableViewCell.swift */; };
+		56CDDE8325D0CC0A00FE92CA /* SouthTramStopDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE8225D0CC0A00FE92CA /* SouthTramStopDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		56CDDE6725CFDBF900FE92CA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56CDDE7825D0B67300FE92CA /* NorthTramStopDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthTramStopDataSource.swift; sourceTree = "<group>"; };
 		56CDDE7D25D0B69E00FE92CA /* TramStopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopTableViewCell.swift; sourceTree = "<group>"; };
+		56CDDE8225D0CC0A00FE92CA /* SouthTramStopDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SouthTramStopDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				56CDDE7825D0B67300FE92CA /* NorthTramStopDataSource.swift */,
+				56CDDE8225D0CC0A00FE92CA /* SouthTramStopDataSource.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				56CDDE7925D0B67300FE92CA /* NorthTramStopDataSource.swift in Sources */,
 				56CDDE1425CFD48C00FE92CA /* SceneDelegate.swift in Sources */,
 				56CDDE5A25CFD4BE00FE92CA /* APIClient.swift in Sources */,
+				56CDDE8325D0CC0A00FE92CA /* SouthTramStopDataSource.swift in Sources */,
 				56CDDE5B25CFD4BE00FE92CA /* TramTrackerTokenAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

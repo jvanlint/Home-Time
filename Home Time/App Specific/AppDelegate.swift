@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        //Insert code to read token here.
+        fetchToken()
 
         return true
     }
@@ -37,3 +37,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    
+    func fetchToken() {
+        let tokenAPI = TramTrackerTokenAPI()
+        tokenAPI.fetchDeviceToken() { result in
+            switch result {
+            case .success(let response):
+                let responseObject = response.responseObject
+                let deviceToken = responseObject[0].deviceToken
+                UserDefaults.deviceToken = deviceToken
+                print("Device token = \(deviceToken)")
+
+            default:
+                print("error \(result)")
+            }
+        }
+    }
+}
