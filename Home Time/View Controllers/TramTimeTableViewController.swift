@@ -9,6 +9,8 @@ import UIKit
 
 class TramTimeTableViewController: UIViewController {
 
+    @IBOutlet weak var northTableView: UITableView!
+    let northTableData = NorthTramStopDataSource()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +20,8 @@ class TramTimeTableViewController: UIViewController {
         imageView.contentMode = .scaleAspectFit // set imageview's content mode
         self.navigationItem.titleView = imageView
 
-        
+        northTableView.delegate = northTableData
+        northTableView.dataSource = northTableData
     }
 
 
