@@ -38,7 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    
+
+
+    /// Fetches a device token from the Tram Tracker API and stores it in User Defaults.
     func fetchToken() {
         let tokenAPI = TramTrackerTokenAPI()
         tokenAPI.fetchDeviceToken() { result in

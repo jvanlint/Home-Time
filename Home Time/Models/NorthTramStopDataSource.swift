@@ -9,13 +9,18 @@ import Foundation
 import UIKit
 
 
+
 class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
 
-    private var data: [String]
+    private var data: [Date]
+    private let tramTrackerAPIClient = TramTrackerAPI()
+
 
     override init() {
-        self.data = ["2:14", "2:19", "3:01"]
+        self.data = [Date(), Date()]
+
         super.init()
+        //self.retrieveNorthStopInfo()
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -25,8 +30,28 @@ class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "northTramStopCell", for: indexPath) as! TramStopTableViewCell
         let item = data[indexPath.row]
-        cell.lblTime.text = item
+        cell.lblTime.text = item.timeIn24HourFormat()
         return cell
+    }
+
+    func retrieveNorthStopInfo() {
+
+        self.data.removeAll()
+
+        tramTrackerAPIClient.fetchTramStopInfo(stop: 4055, line: 78) { result in
+            switch result {
+            case .success(let response):
+                for item in response.responseObject {
+                    if let tramDate = item.predictedArrivalDateTime.dateFromDotNetFormattedDateString(){
+                        self.data.append(tramDate)
+                    }
+                }
+                print(response)
+            default:
+                print("error \(result)")
+
+            }
+        }
     }
 
 }

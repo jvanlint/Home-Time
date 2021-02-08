@@ -77,10 +77,36 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CnX-aS-6x9">
-                                <rect key="frame" x="20" y="329" width="374" height="153"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gr7-bW-OYp" customClass="AdjustableCornerView" customModule="HomeTime" customModuleProvider="target">
+                                <rect key="frame" x="20" y="307" width="374" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="South Tram Stop (4155)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjt-4p-PpX">
+                                        <rect key="frame" x="8" y="7" width="184" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="qKe-pU-zl1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftTopRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightTopRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CnX-aS-6x9">
+                                <rect key="frame" x="20" y="343" width="374" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Y8e-Df-o5F"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="southTramStopCell" id="gGY-8K-vbl" customClass="TramStopTableViewCell" customModule="Home_Time" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
@@ -118,10 +144,16 @@
                         <constraints>
                             <constraint firstItem="oiJ-2d-KP1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Yf-Q4-l6p"/>
                             <constraint firstItem="jnv-BG-djT" firstAttribute="top" secondItem="oiJ-2d-KP1" secondAttribute="bottom" id="CkJ-ON-mxb"/>
+                            <constraint firstItem="CnX-aS-6x9" firstAttribute="top" secondItem="Gr7-bW-OYp" secondAttribute="bottom" id="Gm3-hB-xl0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oiJ-2d-KP1" secondAttribute="trailing" constant="20" id="Lh8-sb-vzw"/>
                             <constraint firstItem="jnv-BG-djT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Oac-mR-Xal"/>
                             <constraint firstItem="oiJ-2d-KP1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Tss-yh-7ad"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gr7-bW-OYp" secondAttribute="trailing" constant="20" id="U4q-BI-Voy"/>
+                            <constraint firstItem="Gr7-bW-OYp" firstAttribute="top" secondItem="jnv-BG-djT" secondAttribute="bottom" constant="8" id="XXZ-75-VdK"/>
+                            <constraint firstItem="CnX-aS-6x9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cof-ta-084"/>
+                            <constraint firstItem="Gr7-bW-OYp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k8t-5f-fCF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jnv-BG-djT" secondAttribute="trailing" constant="20" id="o9d-kh-ZRm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CnX-aS-6x9" secondAttribute="trailing" constant="20" id="rlT-d4-0xW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kns-bQ-Chh">
@@ -130,6 +162,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ooY-WQ-9tL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapRefresh:" destination="BYZ-38-t0r" id="noK-Gk-WiE"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
