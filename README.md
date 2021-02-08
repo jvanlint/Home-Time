@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://git.realestate.com.au/jason-vanlint/Home-Time/blob/main/Home%20Time/App%20Specific/Assets.xcassets/AppIcon.appiconset/Artboard-1.png"/>
+  <img src="https://git.realestate.com.au/jason-vanlint/Home-Time/blob/main/Artboard%20Copy.png"/>
 </p>
 
 # Home Time
