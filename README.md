@@ -23,7 +23,33 @@ The app is designed to notify employees of REA when a tram is coming to the nort
 
 ## Installation
 
-Clone and/or download zip, compile and run.
+Configuring the Xcode project requires a few steps in Xcode to get Home Time up and running. 
+
+
+1) Configure the Team for each target within the project.
+
+Open the project in the Project navigator within Xcode and select each of the targets. Set the Team on the General tab to the team associated with your developer account.
+
+2) Change the Bundle Identifier.
+
+With the project's General tab still open, update the Bundle Identifier value. The project's Home Time target ships with the value:
+
+com.deadfrogstudios.Home-Time
+
+You should modify the reverse DNS portion to match the format that you use:
+
+com.yourdomain.Home-Time
+
+3) Ensure Automatic is chosen for the Provisioning Profile setting in the Code Signing section of Target > Build Settings for the following Targets:
+
+- Home Time
+
+
+4) Ensure iOS Developer is chosen for the Code Signing Identity setting in the Code Signing section of Target > Build Settings for the following Targets:
+
+- Home Time
+
+
 
 ## Contribute
 

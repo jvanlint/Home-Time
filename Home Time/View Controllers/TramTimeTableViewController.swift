@@ -31,19 +31,26 @@ class TramTimeTableViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(true)
+        super.viewWillAppear(true)
         retrieveTramData()
-        }
+    }
 
     @IBAction func didTapRefresh(_ sender: Any) {
         retrieveTramData()
+    }
 
+    @IBAction func didTapClear() {
+        northTableData.clearNorthTramStopData()
+        southTableData.clearSouthTramStopData()
+        self.northTableView.reloadData()
+        self.southTableView.reloadData()
     }
 
     func retrieveTramData() {
         northTableData.retrieveNorthStopInfo { [weak self] in
-             self?.northTableView.reloadData()
+            self?.northTableView.reloadData()
         }
+
         southTableData.retrieveSouthStopInfo { [weak self] in
             self?.southTableView.reloadData()
         }

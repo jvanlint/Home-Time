@@ -184,6 +184,9 @@
                     <navigationItem key="navigationItem" id="kns-bQ-Chh">
                         <barButtonItem key="leftBarButtonItem" title="Clear" id="aWc-Nw-9gQ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapClear" destination="BYZ-38-t0r" id="SXX-Ur-xZa"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ooY-WQ-9tL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
