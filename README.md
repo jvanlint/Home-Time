@@ -11,6 +11,11 @@ Home Time is a coding challenge given to potential mobile dev candidates for REA
 
 The app is designed to notify employees of REA when a tram is coming to the north or south tram stops out the front of 511 Church St., Richmond.
 
+## Problem Statement
+Thanks to all the perks available at the office. It becomes very easy to forget it’s time to catch a tram. As such, REA employees have requested a mobile app that would tell them when trams are arriving at either north or south bound tram stops in front of the office.
+
+The company has reached out to their mobile experts (you) for a solution, that should not only be user friendly but also maintainable & scalable!
+
 ## Features
 
 - [x] Obtains the next 3 expected arrival times from the Tram Tracker API for both north and south bound tram stops
