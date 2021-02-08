@@ -27,6 +27,7 @@
 		56CDDE7E25D0B69E00FE92CA /* TramStopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE7D25D0B69E00FE92CA /* TramStopTableViewCell.swift */; };
 		56CDDE8325D0CC0A00FE92CA /* SouthTramStopDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE8225D0CC0A00FE92CA /* SouthTramStopDataSource.swift */; };
 		56CDDE9425D0FB0D00FE92CA /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE9325D0FB0D00FE92CA /* NotificationViewController.swift */; };
+		56CDDE9C25D147F000FE92CA /* TramStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE9B25D147F000FE92CA /* TramStop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		56CDDE8225D0CC0A00FE92CA /* SouthTramStopDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SouthTramStopDataSource.swift; sourceTree = "<group>"; };
 		56CDDE8725D0E6E100FE92CA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		56CDDE9325D0FB0D00FE92CA /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		56CDDE9B25D147F000FE92CA /* TramStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			children = (
 				56CDDE7825D0B67300FE92CA /* NorthTramStopDataSource.swift */,
 				56CDDE8225D0CC0A00FE92CA /* SouthTramStopDataSource.swift */,
+				56CDDE9B25D147F000FE92CA /* TramStop.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				56CDDE1625CFD48C00FE92CA /* TramTimeTableViewController.swift in Sources */,
 				56CDDE1225CFD48C00FE92CA /* AppDelegate.swift in Sources */,
 				56CDDE9425D0FB0D00FE92CA /* NotificationViewController.swift in Sources */,
+				56CDDE9C25D147F000FE92CA /* TramStop.swift in Sources */,
 				56CDDE7E25D0B69E00FE92CA /* TramStopTableViewCell.swift in Sources */,
 				56CDDE5025CFD4B100FE92CA /* UserDefaultsExtensions.swift in Sources */,
 				56CDDE5C25CFD4BE00FE92CA /* TramTrackerAPI.swift in Sources */,

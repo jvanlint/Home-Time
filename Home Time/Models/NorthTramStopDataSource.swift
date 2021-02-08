@@ -27,9 +27,13 @@ class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "northTramStopCell", for: indexPath) as! TramStopTableViewCell
         let tramDate = data[indexPath.row]
-        let minutes = Calendar.current.dateComponents([.minute], from: Date() , to: tramDate).minute
+        let minutes = Calendar.current.dateComponents([.minute], from: Date() , to: tramDate).minute ?? 0
         cell.lblTime.text = tramDate.timeIn24HourFormat()
-        cell.lblFromNow.text = "\(minutes ?? 0) minute(s) from now."
+        if minutes < 2 {
+            cell.lblFromNow.text = "\(minutes) minute from now."
+        } else {
+            cell.lblFromNow.text = "\(minutes) minutes from now."
+        }
         if(indexPath.row % 2 == 0) {
             cell.backgroundColor = UIColor.systemGray6
         }else{
@@ -37,6 +41,10 @@ class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
         }
         
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Code for when the cell is tapped. Present a alert view controller.
     }
 
     func retrieveNorthStopInfo(completion: @escaping (() -> Void)) {

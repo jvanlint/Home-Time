@@ -10,11 +10,14 @@ import UserNotifications
 
 class NotificationViewController: UIViewController {
 
+    var tramTime: Date?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+
     @IBAction func didTapNotification(_ sender: Any) {
         requestPermission()
         makeNotification()
