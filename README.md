@@ -56,6 +56,16 @@ com.yourdomain.Home-Time
 
 - Home Time
 
+## Notable Coding Features
+Home Time makes use of a custom made generic API manager that is responsible for retrieving data and decoding JSON after retrieval. Seperate classes are then made for the token and tram data that are responsible for forming the URL and defining the JSON structure of the expected response object.
+
+The function ```dateFromDotNetFormattedDateString``` was added an as extension to ```String``` to facilitate code reuse. Several extensions were added to ```Date``` and ```UserDefaults``` to provide quick convenience is formatting and storing data.
+
+The token is retrieved when the app first starts and is stored in UserDefaults for subsequent API calls.
+
+Home Time uses modern app development practices including Storyboards and Auto Layout.
+
+Note also that ```TramTimeTableViewController``` does not contain tableview delegate and datasource methods. These have been extracted out into their own dedicated classes that provide data for each table. This leaves the code in the view controller dedicated to UI and UI interaction and modularises the appraoch to providing data to the table.
 
 
 ## Contribute
