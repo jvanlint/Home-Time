@@ -9,25 +9,31 @@ import UIKit
 
 class TramTimeTableViewController: UIViewController {
 
-    @IBOutlet weak var northTableView: UITableView!
-    @IBOutlet weak var southTableView: UITableView!
-    let northTableData = NorthTramStopDataSource()
-    let southTableData = SouthTramStopDataSource()
+    @IBOutlet weak var topTableView: UITableView!
+    @IBOutlet weak var bottomTableView: UITableView!
 
+    /// Datasource and delgate object variable for the top tableview
+    let topTableData = NorthTramStopDataSource()
+
+    /// Datasource and delgate object variable for the bottom tableview
+    let bottomTableData = SouthTramStopDataSource()
+
+
+    // MARK:- View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Add icon to navbar title
-        let logo = UIImage(named: "logo.pdf")
+        let logo = UIImage(named: "logo.pdf")                   // Set a logo for the navbar instead of title text.
         let imageView = UIImageView(image: logo)
-        imageView.contentMode = .scaleAspectFit // set imageview's content mode
+        imageView.contentMode = .scaleAspectFit
         self.navigationItem.titleView = imageView
 
-        northTableView.delegate = northTableData
-        northTableView.dataSource = northTableData
+        topTableView.delegate = topTableData                    // Set the delgate and datasource for the top table in the view
+        topTableView.dataSource = topTableData
 
-        southTableView.delegate = southTableData
-        southTableView.dataSource = southTableData
+        bottomTableView.delegate = bottomTableData              // Set the delgate and datasource for the bottom table in the view
+        bottomTableView.dataSource = bottomTableData
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -35,24 +41,30 @@ class TramTimeTableViewController: UIViewController {
         retrieveTramData()
     }
 
+    // MARK:- Nav Button Bar Interaction Methods
+
     @IBAction func didTapRefresh(_ sender: Any) {
-        retrieveTramData()
+        retrieveTramData()                                      // Refresh data by making another call to the API and reload tableviews.
     }
 
     @IBAction func didTapClear() {
-        northTableData.clearNorthTramStopData()
-        southTableData.clearSouthTramStopData()
-        self.northTableView.reloadData()
-        self.southTableView.reloadData()
+        topTableData.clearNorthTramStopData()                   // Clear any data in the arrays feeding the table.
+        bottomTableData.clearSouthTramStopData()
+        self.topTableView.reloadData()                          // Reload each table
+        self.bottomTableView.reloadData()
     }
 
+    // MARK:- Table View Refresh Methods
+
+
+    /// Calls a function in the datasource class for each table and reloads the tableview when data has been received.
     func retrieveTramData() {
-        northTableData.retrieveNorthStopInfo { [weak self] in
-            self?.northTableView.reloadData()
+        topTableData.retrieveNorthStopInfo { [weak self] in
+            self?.topTableView.reloadData()
         }
 
-        southTableData.retrieveSouthStopInfo { [weak self] in
-            self?.southTableView.reloadData()
+        bottomTableData.retrieveSouthStopInfo { [weak self] in
+            self?.bottomTableView.reloadData()
         }
     }
 
