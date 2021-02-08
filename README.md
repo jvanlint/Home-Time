@@ -20,8 +20,9 @@ The company has reached out to their mobile experts (you) for a solution, that s
 
 - [x] Obtains the next 3 expected arrival times from the Tram Tracker API for both north and south bound tram stops
 - [x] Enables the user to schedule a local notification for a user defined number of minutes before the tram is due to arrive.
-- [x] Written in Swift5 and uses modern 
-- [x] Uses REA colour pallette
+- [x] Written in Swift5 and modern app development practices including Storyboards and Auto Layout. 
+- [x] Uses REA colour pallette and certain design elements
+- [x] Custom icon and logo!
 
 ## Requirements
 
@@ -37,6 +38,7 @@ Configuring the Xcode project requires a few steps in Xcode to get Home Time up 
 
 Open the project in the Project navigator within Xcode and select each of the targets. Set the Team on the General tab to the team associated with your developer account.
 
+
 2) Change the Bundle Identifier.
 
 With the project's General tab still open, update the Bundle Identifier value. The project's Home Time target ships with the value:
@@ -47,6 +49,7 @@ You should modify the reverse DNS portion to match the format that you use:
 
 com.yourdomain.Home-Time
 
+
 3) Ensure Automatic is chosen for the Provisioning Profile setting in the Code Signing section of Target > Build Settings for the following Targets:
 
 - Home Time
@@ -55,6 +58,7 @@ com.yourdomain.Home-Time
 4) Ensure iOS Developer is chosen for the Code Signing Identity setting in the Code Signing section of Target > Build Settings for the following Targets:
 
 - Home Time
+
 
 ## Notable Coding Features
 Home Time makes use of a custom made generic API manager that is responsible for retrieving data and decoding JSON after retrieval. Seperate classes are then made for the token and tram data that are responsible for forming the URL and defining the JSON structure of the expected response object.
