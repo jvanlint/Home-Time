@@ -1,6 +1,12 @@
 
 <p align="center">
-  <img src="https://git.realestate.com.au/jason-vanlint/Home-Time/blob/main/Artboard%20Copy.png"/>
+  <img src="splash.png"/>
+</p>
+<p align="center">
+  <img src="timetable.png"/>
+</p>
+<p align="center">
+  <img src="notify.png"/>
 </p>
 
 # Home Time
