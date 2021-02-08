@@ -31,23 +31,6 @@ class TramTrackerAPI : APIClient {
 
 extension TramTrackerAPI {
 
-    struct TokenResponse : Decodable {
-        let errorMessage: String?
-        let hasError, hasResponse: Bool
-        let responseObject: [TokenResponseObject]
-        let timeRequested, timeResponded, webMethodCalled: String
-    }
-
-    // MARK: - ResponseObject
-    struct TokenResponseObject: Codable {
-        let type, deviceToken: String
-
-        enum CodingKeys: String, CodingKey {
-            case type = "__type"
-            case deviceToken = "DeviceToken"
-        }
-    }
-
     // MARK: - TramStop
     struct TramStopResponse: Codable {
         let errorMessage: String?

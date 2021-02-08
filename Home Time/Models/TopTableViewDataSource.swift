@@ -10,9 +10,13 @@ import UIKit
 
 
 
-class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
+/// Calls the API, retireves data and populates class variables that store the resulting data for the North tram stop table view.
+class TopTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
 
+    /// The class var that stores the results from the API call to populate a table.
     private var data: [Date]
+
+    /// The API client used to make calls to the Tram Tracker API.
     private let tramTrackerAPIClient = TramTrackerAPI()
 
     override init() {
@@ -25,21 +29,26 @@ class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "northTramStopCell", for: indexPath) as! TramStopTableViewCell
-        let tramDate = data[indexPath.row]
-        let minutes = Calendar.current.dateComponents([.minute], from: Date() , to: tramDate).minute ?? 0
-        cell.lblTime.text = tramDate.timeIn24HourFormat()
-        if minutes < 2 {
+
+        let tramDate = data[indexPath.row]                                                                  // Get the tram date.
+        let minutes = Calendar.current.dateComponents([.minute], from: Date() , to: tramDate).minute  ?? 0  // Calculate the minutes between now and tram arrival.
+
+        cell.lblTime.text = tramDate.timeIn24HourFormat()                                                   // Display the time
+
+        if minutes < 2 {                                                                                    // Customise message based on time remaining.
             cell.lblFromNow.text = "\(minutes) minute from now."
         } else {
             cell.lblFromNow.text = "\(minutes) minutes from now."
         }
-        if(indexPath.row % 2 == 0) {
+
+        if(indexPath.row % 2 == 0) {                                                                        // Change the bg color of the table to give the appearance of bands.
             cell.backgroundColor = UIColor.systemGray6
         }else{
             cell.backgroundColor = UIColor.white
         }
-        
+
         return cell
     }
 

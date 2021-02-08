@@ -5,11 +5,11 @@
 
 # Home Time
 
-> A coding challenge project for recruiting potential devs for REA.
+> A coding challenge for recruiting potential devs for REA.
 
-Home Time is a coding challenge given to potential mobile dev candidates for REA.
+Home Time is a an app challenge given to potential mobile dev candidates for REA. It is created in response to a problem statement supplied by REA.
 
-The app is designed to notify employees of REA when a tram is coming to the north or south tram stops out the front of 511 Church St., Richmond.
+The app is designed to notify employees of REA when a tram is coming to the north or south tram stops out the front of 511 Church St., Richmond. The numbers of each tram stop are provided, as are API details and a function to convert UNIX/POSIX strings into Swift Date types.
 
 ## Problem Statement
 
@@ -88,6 +88,13 @@ com.yourdomain.Home-Time
 
 - Also included in the project are 2 subclassed UIKit (UIbutton and UIView) controls that are IBDesignable. These provide some UI sugar and can be configured in Storyboards visually.
 
+## Assessment Criteria
+
+The assessment criteria for us are as follows:
+- [x] Knowledge of chosen development language (Swift5 was used throughout and no packages or external depencies are used. Networking activity implemented using only UrlSession)
+- [x] Design and Architecture – OOP, Functional Programming, etc. (App was designed to decouple view controllers and data sources. Use of extensions to reuse code and a flexible API model)
+- [ ] Testing – Unit tests, Integration tests, etc. (Unit tests not provided at the time....I know...:sad panda:)
+- [x] Documentation – A good README file, comments in the code, etc. (Have you even seen the beauty in this README? It's like the Mona Lisa of README files. Code comments appear where relevant and value added.
 
 ## Contribute
 

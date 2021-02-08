@@ -40,13 +40,6 @@ class AdjustableCornerView: UIView {
         self.applyMask()
     }
 
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    /*override func draw(_ rect: CGRect) {
-        super.draw(rect)
-
-    }*/
-
     func applyMask()
     {
         let shapeLayer = CAShapeLayer(layer: self.layer)

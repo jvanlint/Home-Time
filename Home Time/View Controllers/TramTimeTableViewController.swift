@@ -13,10 +13,10 @@ class TramTimeTableViewController: UIViewController {
     @IBOutlet weak var bottomTableView: UITableView!
 
     /// Datasource and delgate object variable for the top tableview
-    let topTableData = NorthTramStopDataSource()
+    let topTableData = TopTableViewDataSource()
 
     /// Datasource and delgate object variable for the bottom tableview
-    let bottomTableData = SouthTramStopDataSource()
+    let bottomTableData = BottomTableViewDataSource()
 
 
     // MARK:- View Lifecycle Methods

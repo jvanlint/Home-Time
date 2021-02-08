@@ -9,6 +9,9 @@ import Foundation
 
 extension String {
 
+
+    /// Converts UNIX/POSIX style date string into a Swift Date type.
+    /// - Returns: A translated Swift Date object.
     func dateFromDotNetFormattedDateString() -> Date! {
         guard let startRange = self.range(of: "("), let endRange = self.range(of: "+") else { return nil }
         let lowBound = self.index(startRange.lowerBound, offsetBy: 1)
