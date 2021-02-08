@@ -23,6 +23,8 @@
 		56CDDE5B25CFD4BE00FE92CA /* TramTrackerTokenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE5825CFD4BE00FE92CA /* TramTrackerTokenAPI.swift */; };
 		56CDDE5C25CFD4BE00FE92CA /* TramTrackerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE5925CFD4BE00FE92CA /* TramTrackerAPI.swift */; };
 		56CDDE6825CFDBF900FE92CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CDDE6725CFDBF900FE92CA /* LaunchScreen.storyboard */; };
+		56CDDE7925D0B67300FE92CA /* NorthTramStopDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE7825D0B67300FE92CA /* NorthTramStopDataSource.swift */; };
+		56CDDE7E25D0B69E00FE92CA /* TramStopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDE7D25D0B69E00FE92CA /* TramStopTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		56CDDE5825CFD4BE00FE92CA /* TramTrackerTokenAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramTrackerTokenAPI.swift; sourceTree = "<group>"; };
 		56CDDE5925CFD4BE00FE92CA /* TramTrackerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramTrackerAPI.swift; sourceTree = "<group>"; };
 		56CDDE6725CFDBF900FE92CA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56CDDE7825D0B67300FE92CA /* NorthTramStopDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthTramStopDataSource.swift; sourceTree = "<group>"; };
+		56CDDE7D25D0B69E00FE92CA /* TramStopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramStopTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 		56CDDE6125CFD53700FE92CA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				56CDDE7825D0B67300FE92CA /* NorthTramStopDataSource.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				56CDDE1525CFD48C00FE92CA /* TramTimeTableViewController.swift */,
+				56CDDE7D25D0B69E00FE92CA /* TramStopTableViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -340,12 +346,14 @@
 			files = (
 				56CDDE1625CFD48C00FE92CA /* TramTimeTableViewController.swift in Sources */,
 				56CDDE1225CFD48C00FE92CA /* AppDelegate.swift in Sources */,
+				56CDDE7E25D0B69E00FE92CA /* TramStopTableViewCell.swift in Sources */,
 				56CDDE5025CFD4B100FE92CA /* UserDefaultsExtensions.swift in Sources */,
 				56CDDE5C25CFD4BE00FE92CA /* TramTrackerAPI.swift in Sources */,
 				56CDDE5125CFD4B100FE92CA /* StringExtensions.swift in Sources */,
 				56CDDE4725CFD4A400FE92CA /* WireframeButton.swift in Sources */,
 				56CDDE5225CFD4B100FE92CA /* DateExtensions.swift in Sources */,
 				56CDDE4825CFD4A400FE92CA /* AdjustableCornerView.swift in Sources */,
+				56CDDE7925D0B67300FE92CA /* NorthTramStopDataSource.swift in Sources */,
 				56CDDE1425CFD48C00FE92CA /* SceneDelegate.swift in Sources */,
 				56CDDE5A25CFD4BE00FE92CA /* APIClient.swift in Sources */,
 				56CDDE5B25CFD4BE00FE92CA /* TramTrackerTokenAPI.swift in Sources */,
