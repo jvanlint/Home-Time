@@ -3,6 +3,8 @@
   <img src="https://git.realestate.com.au/jason-vanlint/Home-Time/blob/main/Home%20Time/App%20Specific/Assets.xcassets/AppIcon.appiconset/Artboard-1.png"/>
 </p>
 
+#Home Time
+
 > A coding challenge project for recruiting potential devs for REA.
 
 Home Time is a coding challenge given to potential mobile dev candidates for REA.
