@@ -17,9 +17,7 @@ class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
 
     override init() {
         self.data = [Date(), Date().addingTimeInterval(600)]
-
         super.init()
-        //self.retrieveNorthStopInfo()
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,12 +26,20 @@ class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "northTramStopCell", for: indexPath) as! TramStopTableViewCell
-        let item = data[indexPath.row]
-        cell.lblTime.text = item.timeIn24HourFormat()
+        let tramDate = data[indexPath.row]
+        let minutes = Calendar.current.dateComponents([.minute], from: Date() , to: tramDate).minute
+        cell.lblTime.text = tramDate.timeIn24HourFormat()
+        cell.lblFromNow.text = "\(minutes ?? 0) minute(s) from now."
+        if(indexPath.row % 2 == 0) {
+            cell.backgroundColor = UIColor.systemGray6
+        }else{
+            cell.backgroundColor = UIColor.white
+        }
+        
         return cell
     }
 
-    func retrieveNorthStopInfo() {
+    func retrieveNorthStopInfo(completion: @escaping (() -> Void)) {
 
         self.data.removeAll()
 
@@ -45,6 +51,7 @@ class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
                         self.data.append(tramDate)
                     }
                 }
+                completion()
                 print(response)
             default:
                 print("error \(result)")

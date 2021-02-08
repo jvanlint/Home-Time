@@ -11,10 +11,11 @@ import UIKit
 
 class SouthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
 
-    private var data: [String]
+    private var data: [Date]
+    private let tramTrackerAPIClient = TramTrackerAPI()
 
     override init() {
-        self.data = ["3:14", "3:19", "4:01"]
+        self.data = [Date()]
         super.init()
     }
 
@@ -24,9 +25,38 @@ class SouthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "southTramStopCell", for: indexPath) as! TramStopTableViewCell
-        let item = data[indexPath.row]
-        cell.lblTime.text = item
+        let tramDate = data[indexPath.row]
+        let minutes = Calendar.current.dateComponents([.minute], from: Date() , to: tramDate).minute
+        cell.lblTime.text = tramDate.timeIn24HourFormat()
+        cell.lblFromNow.text = "\(minutes ?? 0) minute(s) from now."
+        if(indexPath.row % 2 == 0) {
+            cell.backgroundColor = UIColor.systemGray6
+        }else{
+            cell.backgroundColor = UIColor.white
+        }
+
         return cell
+    }
+
+    func retrieveSouthStopInfo(completion: @escaping (() -> Void)) {
+
+        self.data.removeAll()
+
+        tramTrackerAPIClient.fetchTramStopInfo(stop: 4155, line: 78) { result in
+            switch result {
+            case .success(let response):
+                for item in response.responseObject {
+                    if let tramDate = item.predictedArrivalDateTime.dateFromDotNetFormattedDateString(){
+                        self.data.append(tramDate)
+                    }
+                }
+                completion()
+                print(response)
+            default:
+                print("error \(result)")
+
+            }
+        }
     }
 
     func clearSouthTramStopData() {

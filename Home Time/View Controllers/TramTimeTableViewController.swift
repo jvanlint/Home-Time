@@ -32,11 +32,21 @@ class TramTimeTableViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(true)
+        retrieveTramData()
         }
 
     @IBAction func didTapRefresh(_ sender: Any) {
-        northTableData.retrieveNorthStopInfo()
-        northTableView.reloadData()
+        retrieveTramData()
+
+    }
+
+    func retrieveTramData() {
+        northTableData.retrieveNorthStopInfo { [weak self] in
+             self?.northTableView.reloadData()
+        }
+        southTableData.retrieveSouthStopInfo { [weak self] in
+            self?.southTableView.reloadData()
+        }
     }
 
 }
