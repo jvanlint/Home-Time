@@ -29,4 +29,7 @@ class SouthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
         return cell
     }
 
+    func clearSouthTramStopData() {
+        self.data.removeAll()
+    }
 }

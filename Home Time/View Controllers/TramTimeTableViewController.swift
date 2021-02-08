@@ -32,7 +32,6 @@ class TramTimeTableViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(true)
-        self.northTableView.reloadData()
         }
 
     @IBAction func didTapRefresh(_ sender: Any) {

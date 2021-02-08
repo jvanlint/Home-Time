@@ -53,4 +53,8 @@ class NorthTramStopDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
         }
     }
 
+    func clearNorthTramStopData() {
+        self.data.removeAll()
+    }
+
 }
