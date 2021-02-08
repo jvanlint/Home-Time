@@ -1,7 +1,9 @@
 
 <p align="center">
-  <img src="https://git.realestate.com.au/jason-vanlint/RoveR/blob/master/github-logo.png"/>
+  <img src="https://git.realestate.com.au/jason-vanlint/Home-Time/blob/main/Home%20Time/App%20Specific/Assets.xcassets/AppIcon.appiconset/Artboard-1.png"/>
 </p>
+
+# Home Time
 
 > A coding challenge project for recruiting potential devs for REA.
 
