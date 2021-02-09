@@ -58,21 +58,21 @@ Open the project in the Project navigator within Xcode and select each of the ta
 
 With the project's General tab still open, update the Bundle Identifier value. The project's Home Time target ships with the value:
 
-com.deadfrogstudios.Home-Time
+`com.deadfrogstudios.Home-Time`
 
 You should modify the reverse DNS portion to match the format that you use:
 
-com.yourdomain.Home-Time
+`com.yourdomain.Home-Time`
 
 
 3) Ensure Automatic is chosen for the Provisioning Profile setting in the Code Signing section of Target > Build Settings for the following Targets:
 
-- Home Time
+- *Home Time*
 
 
 4) Ensure iOS Developer is chosen for the Code Signing Identity setting in the Code Signing section of Target > Build Settings for the following Targets:
 
-- Home Time
+- *Home Time*
 
 
 ## Notable Coding Features
@@ -95,7 +95,7 @@ The assessment criteria for us are as follows:
 - [x] Knowledge of chosen development language (Swift5 was used throughout and no packages or external depencies are used. Networking activity implemented using only UrlSession)
 - [x] Design and Architecture – OOP, Functional Programming, etc. (App was designed to decouple view controllers and data sources. Use of extensions to reuse code and a flexible API model)
 - [ ] Testing – Unit tests, Integration tests, etc. (Unit tests not provided at the time....I know...:sad panda:)
-- [x] Documentation – A good README file, comments in the code, etc. (Have you even seen the beauty in this README? It's like the Mona Lisa of README files. Code comments appear where relevant and value added.
+- [x] Documentation – A good README file, comments in the code, etc. (Have you even seen the beauty in this README? It's like the Mona Lisa of README files. Code comments appear where relevant and value added.)
 
 ## Contribute
 
