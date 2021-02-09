@@ -38,6 +38,7 @@ To address the problem statement several UI and UX considerations were made:
 <p align="center"><img src="notify_custom.png"/></p>
 
 - The "Clear" button was asked for in the brief and shown on the sample UI provided in the Problem Statement. Whilst this functionality has been programmed, the developer of this app does not understand the intention behind it but has implemented it regardless.
+<p align="center"><img src="clear_btn.png"/></p>
 
 ## Requirements
 
