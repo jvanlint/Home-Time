@@ -80,13 +80,13 @@ You should modify the reverse DNS portion to match the format that you use:
 
 - Home Time makes use of a custom made generic API manager that is responsible for retrieving data and decoding JSON after retrieval. Seperate classes are then made for the token and tram data that are responsible for forming the URL and defining the JSON structure of the expected response object.
 
-- The function ```dateFromDotNetFormattedDateString``` was added an as extension to ```String``` to facilitate code reuse. Several extensions were added to ```Date``` and ```UserDefaults``` to provide quick convenience in formatting and storing data.
+- The function `dateFromDotNetFormattedDateString` was added an as extension to `String` to facilitate code reuse. Several extensions were added to `Date` and `UserDefaults` to provide quick convenience in formatting and storing data.
 
 - The device token is retrieved when the app first starts and is stored in UserDefaults for subsequent API calls.
 
 - Home Time uses modern app development practices including Storyboards and Auto Layout.
 
-- Note also that ```TramTimeTableViewController``` does not contain UITableview delegate and datasource methods. These have been extracted out into their own dedicated classes that provide data for each table. This leaves the code in the view controller dedicated to UI and UI interaction and modularises the appraoch to providing data to the table.
+- Note also that `TramTimeTableViewController` does not contain UITableview delegate and datasource methods. These have been extracted out into their own dedicated classes that provide data for each table. This leaves the code in the view controller dedicated to UI and UI interaction and modularises the appraoch to providing data to the table.
 
 - Also included in the project are 2 subclassed UIKit (UIbutton and UIView) controls that are IBDesignable. These provide some UI sugar and can be configured in Storyboards visually.
 
