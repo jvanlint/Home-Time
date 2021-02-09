@@ -35,6 +35,7 @@ To address the problem statement several UI and UX considerations were made:
 <p align="center"><img src="table_view.jpg"/></p>
 
 - Whilst not explicitly called for, the problem statement clearly mentions the app needs to assist in informing staff about trams arriving. To help in this, the app allows the user to tap a tram time and set up a local notification that triggers in minutes before the tram arrives. The amount of warning defaults to 5 mins but may be adjusted by the user. Once a notification has been set and if the app in no longer in the foreground (or phone is locked) a local notification will be triggered at the set time to warn the user. Notifications are also sent to Apple Watch if the user has one paired with the phone.
+<p align="center"><img src="notify_custom.png"/></p>
 
 - The "Clear" button was asked for in the brief and shown on the sample UI provided in the Problem Statement. Whilst this functionality has been programmed, the developer of this app does not understand the intention behind it but has implemented it regardless.
 
