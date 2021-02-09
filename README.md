@@ -1,7 +1,5 @@
 
-<p align="center">
-  <img src="splash_combined.png"/>
-</p>
+<p align="center"><img src="splash_combined.png"/></p>
 
 # Home Time
 
@@ -31,8 +29,10 @@ The company has reached out to their mobile experts (you) for a solution, that s
 To address the problem statement several UI and UX considerations were made:
 
 - As the app by default loads the tables with data when launched the "Load" button was replaced with a "refresh" icon which refreshes both tables with data from the API.
+<p align="center"><img src="refresh_icon.jpg"/></p>
 
 - In addition to showing the times for the next 3 trams, the app conveniently calculates the time difference in minutes between now and when the tram comes to give the user a deeper understanding for just how long they have got until the next tram. (eg. 16:04  5 minutes from now.
+<p align="center"><img src="table_view.jpg"/></p>
 
 - Whilst not explicitly called for, the problem statement clearly mentions the app needs to assist in informing staff about trams arriving. To help in this, the app allows the user to tap a tram time and set up a local notification that triggers in minutes before the tram arrives. The amount of warning defaults to 5 mins but may be adjusted by the user. Once a notification has been set and if the app in no longer in the foreground (or phone is locked) a local notification will be triggered at the set time to warn the user. Notifications are also sent to Apple Watch if the user has one paired with the phone.
 
