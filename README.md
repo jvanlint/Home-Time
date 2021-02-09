@@ -1,12 +1,6 @@
 
 <p align="center">
-  <img src="splash.png"/>
-</p>
-<p align="center">
-  <img src="timetable.png"/>
-</p>
-<p align="center">
-  <img src="notify.png"/>
+  <img src="splash_combined.png"/>
 </p>
 
 # Home Time
