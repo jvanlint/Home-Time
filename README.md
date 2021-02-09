@@ -3,7 +3,7 @@
 
 # Home Time
 
-> A coding challenge for recruiting potential devs for REA.
+> A coding challenge for recruiting potential mobile devs for REA. This represents an iOS submission.
 
 Home Time is a an app challenge given to potential mobile dev candidates for REA. It is created in response to a problem statement supplied by REA.
 
