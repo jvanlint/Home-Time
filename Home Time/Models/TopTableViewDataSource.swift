@@ -33,21 +33,8 @@ class TopTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "northTramStopCell", for: indexPath) as! TramStopTableViewCell
 
         let tramDate = data[indexPath.row]                                                                  // Get the tram date.
-        let minutes = Calendar.current.dateComponents([.minute], from: Date() , to: tramDate).minute  ?? 0  // Calculate the minutes between now and tram arrival.
 
-        cell.lblTime.text = tramDate.timeIn24HourFormat()                                                   // Display the time
-
-        if minutes < 2 {                                                                                    // Customise message based on time remaining.
-            cell.lblFromNow.text = "\(minutes) minute from now."
-        } else {
-            cell.lblFromNow.text = "\(minutes) minutes from now."
-        }
-
-        if(indexPath.row % 2 == 0) {                                                                        // Change the bg color of the table to give the appearance of bands.
-            cell.backgroundColor = UIColor.systemGray6
-        }else{
-            cell.backgroundColor = UIColor.white
-        }
+        cell.configureLabels(tramTime: tramDate, row: indexPath.row)
 
         return cell
     }
